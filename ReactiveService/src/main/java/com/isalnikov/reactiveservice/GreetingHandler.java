@@ -22,7 +22,7 @@ public class GreetingHandler {
         Mono<String> mono = uppercase.apply(Flux.just("Hello, Spring!")).next();
 
         return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)
-                //.body(BodyInserters.fromObject( "Hello, Spring!"));
-                .body(BodyInserters.fromPublisher(mono, String.class));
+                .body(BodyInserters.fromObject( "Hello, Spring!"));
+                //.body(BodyInserters.fromPublisher(mono, String.class));
     }
 }
