@@ -21,7 +21,7 @@ public class GreetingRouter {
     }
 
     @Bean
-    public Function<Flux<String>, Flux<String>> uppercase() {
+    public Function<Flux<String>, Flux<String>> upperCase() {
         return flux -> flux.map(value -> value.toUpperCase());
     }
 

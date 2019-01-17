@@ -23,6 +23,6 @@ public class GreetingHandler {
 
         return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)
                 .body(BodyInserters.fromObject( "Hello, Spring!"));
-                //.body(BodyInserters.fromPublisher(mono, String.class));
+               // .body(BodyInserters.fromPublisher(mono, String.class));
     }
 }
